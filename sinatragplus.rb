@@ -23,7 +23,7 @@ class GPlus
         person = GooglePlus::Person.get(@gid.to_i)
         puts "person = #{person.inspect}"
         @row0 = person.display_name
-        @row1 = person.tagline
+        @row1 = person.organizations
         @row2 = person.url
       rescue Exception => msg  
         # display the system generated error message  

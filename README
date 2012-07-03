@@ -1,2 +1,9 @@
 http://rubylearning.com/blog/2011/09/20/how-do-i-use-sinatra-to-access-the-google-api/
 
+In the google console: https://code.google.com/apis/console
+It is important to correctly specify the "Redirect URIs" and "Javascript origins" values:
+
+              Redirect URIs:  http://localhost:4567
+              JavaScript origins: http://localhost:4567
+
+
