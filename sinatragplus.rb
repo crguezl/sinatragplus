@@ -21,6 +21,7 @@ class GPlus
       begin
         GooglePlus.api_key = @apikey
         person = GooglePlus::Person.get(@gid.to_i)
+        puts "person = #{person.inspect}"
         @row0 = person.display_name
         @row1 = person.tagline
         @row2 = person.url
